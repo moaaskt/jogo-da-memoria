@@ -66,12 +66,11 @@ document.querySelector('#inicio').disabled = true;
 
 const tratarCliqimg = (e) => {
      if(travacliq) return;
-    const p = +e.target.getAttribute('data-valor');
+    const p = + e.target.getAttribute('data-valor');
     const valor = cards[p];
     e.target.src = imagens [valor - 1 ];
      e.target.onclick = null;
-
-    if(!cardtrav) {
+        if(!cardtrav) {
         cardtrav = true;
         positionTrav = p;
         valueTrav = valor;
@@ -95,7 +94,7 @@ const tratarCliqimg = (e) => {
         cardtrav = false;
         positionTrav = -1;
         valueTrav = 0;
-    }
+    };
 
     if(points==8){
         document.querySelector('#inicio').disabled = false;
