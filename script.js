@@ -67,8 +67,8 @@ const tratarCliqimg = (e) => {
      if(travacliq) return;
     const p = +e.target.getAttribute('data-valor');
     const valor = cards[p];
-    e.target.src = imagens[valor-1];
-    e.target.onclick = null;
+    e.target.src = imagens [valor - 1 ];
+     e.target.onclick = null;
 
     if(!cardtrav) {
         cardtrav = true;
@@ -88,7 +88,7 @@ const tratarCliqimg = (e) => {
             img.src = fundo;
             img.onclick = tratarCliqimg;
             travacliq = false;
-        } , 1500);
+        } , 3000);
 
         }
         cardtrav = false;
