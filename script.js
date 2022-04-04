@@ -46,6 +46,7 @@ elementImg.forEach(
     (img, i) => {
         img.onclick = tratarCliqimg;
         img.style.opacity = 1;
+        img.src = fundo;
     });
 
 
